@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquillaje</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #F48FB1 ;
+            color: ##F48FB1;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6lHrk3z499_ZrUKmVq_LP8hQMireCrwrwdBvdcVUntE8xohYDUmO-E8Yd_v-hTEF7YE&usqp=CAU');
+
+background-position: center;
+
+color: #E74C3C ;
+
+text-align: right;
+
+padding: 20px 0;
+
+}
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #F48FB1;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maquillaje</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#tutoriales">Tutoriales</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a nuestro sitio web de maquillaje</h2>
+        <p>Descubre los últimos productos, tutoriales de maquillaje y consejos de belleza para lucir espectacular en cualquier ocasión.</p>
+    </section>
+
+    <section id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="gallery">
+            <img src="https://ballerina.cl/newsite/wp-content/uploads/2020/10/imagen_noticia_Ballerina_28_10_2020.png">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzi0Q0cddJ0kbaDjyR2xRWChElWtnMIDSAC3mVwPU8PVuRA0mWcK0Ckxn_fP-TMcjGutM&usqp=CAU" alt="Producto 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7L0qDyNF3QUH-Gf_mRbkjBjGD9W8qthUPDQ&usqp=CAU" alt="Producto 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-saJWI9h4pNjKle7Xk-jaQAi02E9KR0nb7Q&usqp=CAU" alt="Producto 4">
+        </div>
+    </section>
+
+    <section id="tutoriales">
+        <h2>Tutoriales de Maquillaje</h2>
+        <p>Descubre paso a paso cómo lograr looks increíbles con nuestros tutoriales de maquillaje.</p>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9u5dVDQhqaDP0nQKjVCqPFz12SpelWbol-MyU9yMfcTKDEofhlrFaRg-ucKJSWtyB9Oo&usqp=CAU" alt="Tutorial 1">
+            <img src="https://i.pinimg.com/736x/2d/85/c4/2d85c4ce68bec43cd54859533bf2b07a.jpg" alt="Tutorial 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNidjmj0xBB0FNiSl8CLQq6Xxly9unHFCDq6oC77ZxfQENieN8u_ic5sia84bhHqJvX3M&usqp=CAU" alt="Tutorial 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbM3TUaw0-8zN_hdJAfJrHT0UlmNSZ4leFaw&usqp=CAU" alt="Tutorial 4">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o sugerencia? Contáctanos.</p>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Maquillaje. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
